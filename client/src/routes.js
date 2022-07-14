@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Routes,Route ,BrowserRouter } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+
+import {Helmet} from "react-helmet";
 import { isAuth } from './store/actions/users';
 import { Loader } from './utils/tools';
 
@@ -47,6 +49,12 @@ const Router = () => {
       <Loader/>
       :
       <>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>Flick DEX</title>
+                <link rel="canonical" href="flickdex.herokuapp.com" />
+                <meta name="description" content="online database of information related to films" />
+            </Helmet>
         <Header/>
         <MainLayout>
           <Routes>

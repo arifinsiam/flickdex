@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Flick DEX",
+  "name": "online database of information related to films",
   "icons": [
     {
       "src": "favicon.ico",

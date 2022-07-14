@@ -15,7 +15,7 @@ export const articlesSlice = createSlice({
         homeSort:{
             sortby:"_id",
             order:"desc",
-            limit:4,
+            limit:8,
             skip:0
         },
         loading:false,
